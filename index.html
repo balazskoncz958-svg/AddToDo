@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todoapp</title>
+  </head>
+  <body>
+    <div id="app" class="flex flex-col items-center gap-4">
+      <h1 class="text-center text-4xl p-1.5">ToDoApp</h1>
+
+      <div class="flex items-center">
+        <div class="max-w-sm w-full space-y-3">
+
+          <div class="max-w-sm w-full space-y-3">
+            <input id="newtodo" type="text" class="py-2.5 sm:py-3 px-4 rounded-lg block w-full bg-layer border-layer-line sm:text-sm text-foreground placeholder:text-muted-foreground-1 focus:border-primary-focus focus:ring-primary-focus disabled:opacity-50 disabled:pointer-events-none" placeholder="Új teendő"  >
+          </div>
+
+        </div>
+        <i onclick="handleAdd()" data-lucide="circle-plus" width="50" heigth="50" class="text-indigo-300 cursor-pointer"></i>
+      </div>
+
+      <ul class="max-w-xs w-full flex flex-col bg-amber-700 lista" ></ul>
+
+       
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+  </body>
+</html>
